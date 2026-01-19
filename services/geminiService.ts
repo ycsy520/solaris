@@ -21,12 +21,7 @@ Examples:
 `;
 
 export const generateFireConfig = async (prompt: string): Promise<GeneratedFireStyle> => {
-  const apiKey = process.env.API_KEY;
-  if (!apiKey) {
-    throw new Error("API Key not found in environment variables.");
-  }
-
-  const ai = new GoogleGenAI({ apiKey });
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
   try {
     const response = await ai.models.generateContent({
