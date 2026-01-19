@@ -1,0 +1,5 @@
+{
+  "name": "SOLARIS: Stellar Photosphere Simulation",
+  "description": "A physically inspired simulation of solar granulation, limb darkening, and coronal mass ejections using GLSL and React Three Fiber.",
+  "requestFramePermissions": []
+}
